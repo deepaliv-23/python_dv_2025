@@ -1,0 +1,15 @@
+.gradeA {
+  background-color: lightgreen;
+}
+
+.gradeB {
+  background-color: lightcoral;
+}
+
+input[type="text"] {
+  border: 2px solid blue;
+}
+
+input[type="email"] {
+  border: 2px dashed green;
+}

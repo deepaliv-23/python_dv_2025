@@ -1,0 +1,24 @@
+.box {
+  margin: 10px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.box1 {
+  border: 2px solid red;
+}
+
+.box2 {
+  border: 4px dashed blue;
+}
+
+.box3 {
+  border: 6px dotted green;
+}
+
+.box4 {
+  border: 3px double purple;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}

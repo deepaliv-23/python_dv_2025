@@ -1,0 +1,21 @@
+.inline-section span,
+.inline-section a,
+.inline-section strong {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.block-section div,
+.block-section p,
+.block-section h1 {
+  border: 1px solid red;
+  margin: 5px;
+}
+
+.block-to-inline {
+  display: inline;
+}
+
+.inline-to-block {
+  display: block;
+}
