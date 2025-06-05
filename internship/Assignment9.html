@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h1> Form </h1>
+
+    <form action="Post"  >
+        <label>Name: </label>
+        <input type="text" name="myname" placeholder="Enter your name" required> <br> <br>
+
+        <label>Email: </label>
+        <input type="text" name="email" placeholder="Enter your email" required> <br> <br>
+
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Enter your username" required> <br> <br>
+
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" placeholder="Enter Password"> <br> <br>
+
+        <label>Gender</label> <br>
+        <input type="radio" name="gender" value="Male" required> MAle <br>
+        <input type="radio" name="gender" value="Female" > Female <br>
+        <input type="radio" name="gender" value="Prefer_not_to_say" > Prefer not to say <br> <br>
+
+        <label>Country</label>
+        <select type="dropdown" name="dropdown" placeholder="Select your Country" required>
+        <option value="one">India</option>
+        <option value="one">America</option>
+        <option value="one">Africa</option>
+        </select> <br> <br>
+
+<button type="button" onclick="alert('Form in Successfully')">Sign in!</button><br> <br>
+
+<button type="button" onclick="alert('Form not accepted')">Reset!</button>
+
+</form>
+</body>
+</html>
