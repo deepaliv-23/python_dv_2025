@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+  height: 400px;
+  border: 1px solid #000;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
+
+.static {
+  background-color: red;
+  position: static;
+}
+
+.relative {
+  background-color: green;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.absolute {
+  background-color: blue;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.fixed {
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}

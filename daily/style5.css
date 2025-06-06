@@ -1,0 +1,31 @@
+*{
+    background-color: rgb(212, 0, 255);
+    margin: 0px;
+    padding: 0px;
+}
+
+#para p{
+    border: 2px solid;
+    display: inline;
+    height: 500px;
+    width: 500px;
+}
+
+#para1 p{
+    border: 2px solid;
+    display: inline-block;
+    height: 200px;
+    width: 100px;
+}
+
+a{
+    border: 2px solid;
+    display: block;
+}
+
+#image{
+    position: relative;
+    left: 250px;
+    top: -200px;
+    z-index:1;
+}
