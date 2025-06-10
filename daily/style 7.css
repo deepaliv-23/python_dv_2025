@@ -1,0 +1,35 @@
+ div a:link{
+    color: green;
+}
+
+div a:visited{
+    color: chocolate;
+}
+
+a:visited{
+    color: cornflowerblue;
+}
+
+a:hover{
+    background-color: cyan;
+}
+
+.demo{
+    display:block;
+}
+
+.demo:hover p{
+    display: block;
+}
+
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: darkgreen;
+}
+
+#box:hover{
+    height: 200px;
+    width: 200px;
+    background-color: chartreuse;
+}

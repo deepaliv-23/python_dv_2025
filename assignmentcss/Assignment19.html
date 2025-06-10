@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to power</title>
+</head>
+
+<style>
+    body { display:flex; justify-content:center; align-items:center; height:100vh; font-family:sans-serif; }
+    .btn {
+      background:#ff6f61;
+      border:none;
+      color:#fff;
+      padding:1rem 2rem;
+      font-size:1.2rem;
+      border-radius:5px;
+      cursor:pointer;
+      transition:transform 0.3s, background 0.3s, font-size 0.3s;
+    }
+    .btn:hover {
+      background:#ff3b2f;
+      transform:rotate(5deg);
+      font-size:1.4rem;
+    }
+  </style>
+
+<body>
+    <button class="btn">Hover Me 🧨</button>
+</body>
+</html>
