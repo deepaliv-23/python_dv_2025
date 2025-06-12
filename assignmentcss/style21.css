@@ -1,0 +1,14 @@
+.rocket {
+  font-size: 60px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.rocket.launch {
+  animation: launchRocket 2s forwards ease-in;
+}
+
+@keyframes launchRocket {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-500px); }
+}

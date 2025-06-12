@@ -1,0 +1,31 @@
+.mood-box {
+  position: relative;
+  height: 200px;
+  margin: 50px auto;
+  width: 80%;
+}
+.mood-box::after {
+  content: "Feeling Calm";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .mood-box::after {
+    content: "Feeling Cheerful";
+    background-color: yellow;
+    color: black;
+  }
+}
+@media (max-width: 500px) {
+  .mood-box::after {
+    content: "Feeling Bold";
+    background-color: red;
+  }
+}

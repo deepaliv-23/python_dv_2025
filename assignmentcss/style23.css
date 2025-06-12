@@ -1,0 +1,11 @@
+.crab {
+  width: 100px;
+  height: 60px;
+  background-color: red;
+  animation: crabWalk 3s infinite ease-in-out;
+}
+
+@keyframes crabWalk {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  50% { transform: translateX(200px) rotate(10deg); }
+}

@@ -1,0 +1,13 @@
+.disco-box {
+  width: 100px;
+  height: 100px;
+  animation: disco 2s infinite linear;
+}
+
+@keyframes disco {
+  0% { background-color: red; transform: rotate(0deg); }
+  25% { background-color: yellow; transform: rotate(90deg); }
+  50% { background-color: lime; transform: rotate(180deg); }
+  75% { background-color: cyan; transform: rotate(270deg); }
+  100% { background-color: violet; transform: rotate(360deg); }
+}

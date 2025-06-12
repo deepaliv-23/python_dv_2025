@@ -1,0 +1,20 @@
+.quote-frame {
+  border: 5px solid #444;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 600px;
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .quote-frame {
+    padding: 30px;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .quote-frame {
+    padding: 20px;
+    font-size: 1rem;
+  }
+}

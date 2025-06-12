@@ -1,0 +1,66 @@
+.demo p{
+    font-size: 20px;
+}
+.demo .p1{
+    font-size: 2em;
+}
+.demo .p2{
+    font-size: 2rem;
+}
+.demo .p3{
+    font-size: 12%;
+}
+
+
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    position: relative;
+    transition-property: width;
+    transition-duration: 1s
+
+    /* transition-timing-function: ease-in-out; */
+    /* transaction-delay: 2s; */
+    /* animation-name=example; */
+    /* animation-duration: 1s; */
+    /* animation-delay:2s; */
+    /* animation-iteration-count:3; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-timing-function: ease-in-out; */
+}
+
+#box:hover{
+    /* width: 300px;
+    transform: translate(50px, 100px);
+    transform: rotate(360px);
+    transform: scale(2,3);
+    transform: skew(60deg);
+    transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY();) */
+}
+
+@keyframes example{
+    0%{
+        background-color: antiquewhite;
+        left: 0px;
+        top: 0px;
+    }
+
+    25%{
+        background-color:aqua;
+        left: 200px;
+        top: 200px;
+    }
+
+    50%{
+        background-color: red;
+        left: 0;
+        top: 2oopx;
+    }
+
+    0%{
+        background-color: antiquewhite;
+        left: 0;
+        top: 0;
+    }
+}

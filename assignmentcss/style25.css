@@ -1,0 +1,23 @@
+.robot {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.robot div {
+  width: 50px;
+  height: 50px;
+  background: gray;
+  transition: transform 0.5s;
+}
+@media (max-width: 600px) {
+  .robot .head {
+    transform: rotate(45deg);
+  }
+  .robot .body {
+    transform: translateX(30px) rotate(10deg);
+  }
+  .robot .leg {
+    transform: rotate(-45deg);
+  }
+}
