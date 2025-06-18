@@ -1,0 +1,221 @@
+body{
+    background-color: gray;
+}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: gray;
+  display: block;
+  flex: 1;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+.a{
+  margin: auto;
+  width: 60%;
+  border: 3px solid white;
+  padding: 10px;
+  top: -50px;
+}
+
+.a{
+  font-size: 100px;
+  text-align: justify;
+  text-align-last: center;
+  letter-spacing: 10px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ab{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+}
+/* Arrow */
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  margin: 0;
+  padding: 0;
+}
+
+.circle-button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f52220; /* red */
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.circle-button:hover {
+  transform: scale(1.1);
+}
+
+.arrow {
+  font-weight: bold;
+}
+
+/* main */
+
+#abc{
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: xx-large;
+  writing-mode:sideways-lr;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 20px;
+  font-size: xx-small;
+}
+
+.grid-container > div {
+  color:#000;
+  padding: 10px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+
+/* skill */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #222; /* your circle bg */
+  border-radius: 50%; /* makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle .icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* skills */
+
+.skills-wrapper {
+  display: flex;
+  gap: 30px;
+}
+.column {
+  flex: 1;
+}
+.skill {
+  margin-bottom: 15px;
+}
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.bar {
+  height: 25px;
+  background: lightgray;
+  border-radius: 4px;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 25px;
+  overflow: hidden;
+  animation: fill 1.5s ease-in-out;
+}
+.bar.ui     { background: lightgray; }
+.bar.graphic{ background: lightgray; }
+.bar.flash  { background: lightgray; }
+.bar.html   { background: lightgray; }
+.bar.jquery { background: lightgray; }
+.bar.php    { background: lightgray; }
+
+@keyframes fill {
+  from { width: 0; }
+  to   { /* width from inline style */ }
+}
+
+/* resume */
+
+.circle-btn-classic {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;       /* centers single-line content */
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.circle-btn-classic:hover {
+  filter: brightness(0.9);
+}
