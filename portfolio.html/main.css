@@ -65,6 +65,29 @@ body {
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
+/* 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#dot{
+  padding: 25px;
+  background-color: #0563bb;
+  color: black;
+  font-size: 20x;
+  text-align: end;
+} */
+
+.dot-d {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  align-item: center;
+}
 
 a {
   color: var(--accent-color);
@@ -208,6 +231,7 @@ h6 {
 .navmenu {
   padding: 0;
   z-index: 9997;
+  color: white;
 }
 
 .navmenu ul {
@@ -908,6 +932,16 @@ section,
   padding: 8px 20px;
   font-family: Arial;
   border-radius: 25px;
+  background-color: #a4cef5;
+  margin-top: 8px;
+}
+
+.tag-cloud-s {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  font-family: Arial;
+  border-radius: 25px;
   background-color: #0563bb;
   margin-top: 8px;
 }
@@ -915,13 +949,17 @@ section,
 .dot {
   height: 40px;
   width: 40px;
-  background-color: #0563bb;
+  background-color: #a4cef5;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+/* :hover .dot{
+  background-color: #0563bb;
+} */
 
 .container-s {
   display: grid;

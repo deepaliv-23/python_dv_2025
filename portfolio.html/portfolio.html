@@ -59,7 +59,7 @@
                     </a>
                 </li>
             </ul>
-            
+            <!-- <span id="dot" class="dot" onclick="myFunction()"> dark mode </span> -->
         </nav>
     </header>
 
@@ -382,9 +382,9 @@
 
         <textarea rows="4" cols="110" name="comment" style="height: 80px;" placeholder="Enter some text..." required> </textarea> <br><br>
 
-<input type="submit" value="sign in" style="width: 100px; height: 40px;" class="tag-cloud">
+<input type="submit" value="sign in" style="width: 100px; height: 40px;" class="tag-cloud-s">
 
-<button type="button" onclick="alert('Something went wrong')" style="width: 100px; height: 40px;" class="tag-cloud">Reset!</button>
+<button type="button" onclick="alert('Something went wrong')" style="width: 100px; height: 40px;" class="tag-cloud-s">Reset!</button>
 
 </form>
   </div>  
@@ -424,6 +424,13 @@
     </a> -->
 
     <!--preloader-->
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
+
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
