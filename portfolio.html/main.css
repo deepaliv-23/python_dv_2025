@@ -239,6 +239,13 @@ h6 {
   padding: 0 0 20px 0;
   margin: 0;
   width: 140px;
+  position: absolute; /* or fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .navmenu a,
@@ -659,6 +666,7 @@ section,
   line-height: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -971,7 +979,7 @@ section,
 
 .container-s > div {
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   text-align: left;
 }
 
@@ -1139,6 +1147,110 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+/* Achievement section */
+
+.Achievement .Achievement-title {
+  color: var(--heading-color);
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.achievement-card {
+  transition: all 0.3s ease;
+}
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
+}
+
+.container-x {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.container-x > div {
+  padding: 10px;
+  text-align: center;
+}
+
+/*resume*/
+
+.container-y {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+}
+.container-y > div {
+  padding: 10px;
+  text-align: left;
+}
+
+.gallery:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.gallery:hover img {
+  transform: scale(1.05);
+}
+
+/* .container-k {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  gap: 100px;
+  padding: 10px;
+}
+
+.container-k > div {
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+ } */
+ 
+/* .project-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    overflow: hidden;
+} */
+/*
+.project-box>i{
+    font-size: 40px;
+    color: #008fef;
+    margin-bottom: 30px;
+}
+.project-box label{
+    font-size: 15px;
+    color: #6f7070;
+}
+.project-box::after, .contact-info::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: var(--second-color);
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: 1;
+}
+.project-box:hover.project-box::after,
+.contact-info:hover.contact-info::after{
+    bottom: 0;
+}
+.project-box:hover.project-box i,
+.project-box:hover.project-box>h3,
+.project-box:hover.project-box>label{
+    color: var(--color-white);
+    z-index: 2;
+} */
+
 
 /* menu */
 
