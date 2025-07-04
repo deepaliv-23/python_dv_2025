@@ -1,81 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <style>
-        /* Reset and layout */
-/* * { box-sizing: border-box; } */
-body {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+  
+.services .service-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.services .service-item .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-/* .gallery {
-  width: calc(33.333% - 16px);
-  background: #fff;
-  border: 1px solid #ddd;
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-@media(max-width: 768px) {
-  .gallery { width: calc(50% - 16px); }
-}
-@media(max-width: 480px) {
-  .gallery { width: 100%; }
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
 }
 
-/* Image styling */
-/*.gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s;
-} */
-
-/* Hover effects */
-.gallery:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-.gallery:hover img {
-  transform: scale(1.05);
+.services .service-item .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
 }
 
-/* Text styling */
-/* .gallery h3 {
-  margin: 12px;
-  font-size: 1.2em;
+.services .service-item .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.gallery p {
-  margin: 0 12px 12px;
-  color: #555;
-} */
 
-    </style>
+.services .service-item .icon svg path {
+  transition: 0.5s;
+  fill: color-mix(in srgb, var(--default-color), transparent 95%);
+}
+
+.services .service-item h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item:hover {
+  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.services .service-item.item-cyan i {
+  color: #0563bb;
+}
+
+.services .service-item.item-cyan:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-cyan:hover .icon path {
+  fill: #0563bb;
+}
+</style>
+
 </head>
 <body>
-
-    <script src="validate.js"></script>
-     <!-- Go Live Server -->
-     <!-- ctrl + shift +j -->
-     <!-- Get Console in Browser -->
-
-     <!-- HTML Structure -->
-<div class="gallery">
-  <img src="project1.jpg" alt="Project 1">
-  <h3>Project Title</h3>
-  <p>Short description goes here.</p>
-</div>
-<div class="gallery">
-  <img src="project2.jpg" alt="Project 2">
-  <h3>Another Project</h3>
-  <p>Brief summary.</p>
-</div>
-<!-- Repeat .gallery blocks as needed -->
-
-      
+  <div class="icon">
+                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                            </svg>
+                            <i class="fa-solid fa-pencil"></i>
+                        </div>
+                        <a href="#" class="stretched-link">
+                        <h3>UI/UX Design & Interactive Prototyping</h3> </a>
 </body>
 </html>
