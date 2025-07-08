@@ -17,6 +17,23 @@
   --nav-font: "Poppins",  sans-serif;
 }
 
+:root {
+  --background-color: #ffffff;
+  --default-color: #272829;
+  --heading-color: #45505b;
+  --accent-color: #0563bb;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+}
+body.dark {
+  --background-color: black;
+  --default-color: #ffffff;
+  --heading-color: white;
+  --accent-color: #0563bb;
+  --surface-color: rgb(81, 123, 240);
+  --contrast-color: #ffffff;
+}
+
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
@@ -86,7 +103,7 @@ body {
   border-radius: 50%;
   display: inline-block;
   text-align: center;
-  align-item: center;
+  /* align-item: center; */
 }
 
 a {
@@ -160,6 +177,51 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+/* header */
+
+
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--card);
+  position: sticky; 
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-links { 
+  list-style: none; 
+  display: flex; 
+  gap: 1rem; 
+}
+
+.nav-links a {  
+  text-decoration: none; 
+  color: var(--default-color);
+}
+
+.nav-links a:hover{
+  text-decoration: underline; 
+  color: var(--accent-color);
+}
+
+.theme-toggle {
+  position: fixed; 
+  top: 1rem; 
+  right: 1rem;
+  background: var(--accent-color); 
+  color: var(--text);
+  border: none; 
+  padding: 0.5rem; 
+  cursor: pointer;
+  border-radius: 50%;
 }
 
 /*--------------------------------------------------------------
@@ -320,7 +382,7 @@ h6 {
 }
 
 .tag-cloud > li:hover{
-  background-color: #0563bb;
+  background-color: var(--accent-color);
 }
 
 
@@ -329,7 +391,7 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
+  color: black;
   background-color: var(--background-color);
   font-size: 14px;
   text-align: center;
@@ -343,6 +405,7 @@ h6 {
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
+  color: #45505b;
 }
 
 .footer p {
@@ -796,7 +859,7 @@ section,
 }
 .bar {
   height: 25px;
-  background: #0563bb;
+  background: var(--accent-color);
   border-radius: 4px;
   color: white;
   text-align: right;
@@ -807,12 +870,12 @@ section,
   animation-fill-mode: forwards;
   animation-delay: 2s;
 }
-.bar.ui     { background: #0563bb; }
-.bar.graphic{ background: #0563bb; }
-.bar.flash  { background: #0563bb; }
-.bar.html   { background: #0563bb; }
-.bar.jquery { background: #0563bb; }
-.bar.php    { background: #0563bb; }
+.bar.ui     { background: var(--accent-color); }
+.bar.graphic{ background: var(--accent-color); }
+.bar.flash  { background: var(--accent-color); }
+.bar.html   { background: var(--accent-color); }
+.bar.jquery { background: var(--accent-color); }
+.bar.php    { background: var(--accent-color); }
 
 @keyframes fill {
   from { width: 0; }
@@ -948,7 +1011,7 @@ section,
 }
 
 .services .service-item.item-cyan i {
-  color: #0563bb;
+  color: var(--accent-color);
 }
 
 .services .service-item.item-cyan:hover .icon i {
@@ -956,7 +1019,7 @@ section,
 }
 
 .services .service-item.item-cyan:hover .icon path {
-  fill: #0563bb;
+  fill: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
@@ -970,7 +1033,7 @@ section,
   padding: 8px 20px;
   font-family: Arial;
   border-radius: 25px;
-  background-color: #0563bb;
+  background-color: var(--accent-color);
   margin-top: 8px;
 }
 
@@ -986,7 +1049,7 @@ section,
 }
 
 /* :hover .dot{
-  background-color: #0563bb;
+  background-color: var(--accent-color);
 } */
 
 .container-s {
@@ -1374,4 +1437,45 @@ section,
 .project-box:hover.project-box>label{
     color: var(--color-white);
     z-index: 2;
+}
+
+
+.circle-container {
+  text-align: center;
+}
+
+.circle {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--accent-color) calc(var(--percent) * 1%),
+    #e0e0e0 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle::before {
+  content: attr(data-label);
+  position: absolute;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--default-color);
+}
+
+.container-b {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.container-b > div {
+  padding: 10px;
+  text-align: center;
 }

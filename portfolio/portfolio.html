@@ -26,7 +26,7 @@
     
 </head>
 <body class="index-page">
-    <header id="header" class="header d-flex flex-column justify-content-center">
+    <!-- <header id="header" class="header d-flex flex-column justify-content-center">
         <nav id="navname" class="navname">
             <ul>
                 <li class="tag-cloud">
@@ -59,7 +59,7 @@
                         <span>Contact</span>
                     </a>
                 </li>
-            </ul>
+            </ul>-->
             <!-- <span id="dot" class="dot" onclick="myFunction()"> dark mode </span> -->
              <!-- <div class="flex items-center space-x-4"></div> -->
                 <!-- Mobile Navigation -->
@@ -71,9 +71,48 @@
                 <a href="#skills" class="font-medium text-gray-700 py-2">Skills</a>
                 <a href="#contact" class="font-medium text-gray-700 py-2">Contact</a>
             </div> -->
-        </nav>
+        <!--</nav>
         
-    </header>
+    </header>-->
+
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Sudeep.com</h1>
+      <ul class="nav-links">
+        <li>
+                    <a href="#hero" class="active">
+                        <i class="fa-duotone fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li> <br>
+                <li>
+                    <a href="#about">
+                        <i class="fa-duotone fa-solid fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li> <br>
+                <li>
+                    <a href="#resume">
+                        <i class="fa-solid fa-file"></i>
+                        <span>Resume</span>
+                    </a>
+                </li> <br>
+                <li>
+                    <a href="#services">
+                        <i class="fa-duotone fa-solid fa-server"></i>
+                        <span>Services</span>
+                    </a>
+                </li> <br>
+                <li>
+                    <a href="#Contact">
+                        <i class="fa-solid fa-square-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+      </ul>
+    </nav>
+  </header>
 
     <main class="main">
         <!--hero section-->
@@ -84,7 +123,7 @@
                     <div class="col-lg-9">
                         <h2>Deepali Vidhate</h2>
                         <p>
-                            "I'm" <span class="text"></span> 
+                            I'm <span class="text"></span> 
                         </p>
                         <br>
                         <div class="social-links d-flex justify-content-center">
@@ -95,8 +134,11 @@
                             <a href="https://github.com/deepaliv-23" class="gallery"><i class="fa-solid fa-code-branch"></i></i></a>
                             <a href="https://x.com/DeepaliVidhate" class="gallery"><i class="fa-brands fa-twitter"></i></a>
                         </div> <br>
+                        <!-- <div class="tag-cloud">
+                            <a href=file:///C:/Users/A1/Downloads/my_resume.pdf> Download Resume</a>
+                        </div> -->
                         <div class="tag-cloud">
-                            <a href="c:\Users\A1\Downloads\Screenshot 2025-06-21 183143.pdf"> Download Resume</a>
+                            <a href="file:///C:/Users/A1/Downloads/Modern%20Minimalist%20CV%20Resume.pdf">Download Resume</a>
                         </div>
                     </div>
                 </div>
@@ -219,74 +261,47 @@
             <div class="skill"><div class="bar" style="width:70%"></div><div class="name">Python</div></div>
           </div>
           <div>
-            <!-- <h2>Soft skills</h2>
-            <div>Communication</div>
+            <h2>Soft skills</h2>
+            <!--<div>Communication</div>
             <div>Team Work</div>
             <div>Leadership</div>
             <div>Time Management</div>
             <div>Creativity</div> -->
+      <div class="container-b">
+    <div>
+        <div class="circle-container">
+    <div class="circle" style="--percent: 85" data-label="85%"></div>
+    <div class="label">Communication</div>
+  </div>
 
-            <div class="grid grid-cols-1 gap-8">
-            <!-- Soft Skills -->
-            <div class="bg-white p-8 rounded-lg shadow-md">
-              <h3 class="text-2xl font-semibold mb-8 flex items-center">
-                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
-                  <i class="ri-team-line text-primary"></i>
-                </div>
-                Soft Skills
-              </h3>
-              <div class="grid grid-cols-2 gap-6">
+  <div class="circle-container">
+    <div class="circle" style="--percent: 80" data-label="80%"></div>
+    <div class="label">Team Work</div>
+  </div>
 
-                <div class="flex items-center">
-                  <div class="w-8 h-8 flex items-center justify-center bg-blue-50 rounded-full mr-3">
-                    <i class="ri-chat-4-line text-primary"></i>
-                  </div>
-                  <span>Creativity</span>
-                </div>
+  <div class="circle-container">
+    <div class="circle" style="--percent: 90" data-label="90%"></div>
+    <div class="label">Leadership</div>
+  </div>
+    </div>
 
-                <div class="flex items-center">
-                  <div
-                    class="w-8 h-8 flex items-center justify-center bg-blue-50 rounded-full mr-3"
-                  >
-                    <i class="ri-time-line text-primary"></i>
-                  </div>
-                  <span>Adaptability</span>
-                </div>
+  <div>
+    <div class="circle-container">
+    <div class="circle" style="--percent: 80" data-label="80%"></div>
+    <div class="label">Time Management</div>
+  </div>
 
-                <div class="flex items-center">
-                  <div
-                    class="w-8 h-8 flex items-center justify-center bg-blue-50 rounded-full mr-3"
-                  >
-                    <i class="ri-lightbulb-line text-primary"></i>
-                  </div>
-                  <span>Time Management</span>
-                </div>
+  <div class="circle-container">
+    <div class="circle" style="--percent: 84" data-label="84%"></div>
+    <div class="label">Creativity</div>
+  </div>
 
-                <div class="flex items-center">
-                  <div
-                    class="w-8 h-8 flex items-center justify-center bg-blue-50 rounded-full mr-3"
-                  >
-                    <i class="ri-group-line text-primary"></i>
-                  </div>
-                  <span>Empathy</span>
-                </div>
-
-                <div class="flex items-center">
-                  <div class="w-8 h-8 flex items-center justify-center bg-blue-50 rounded-full mr-3">
-                    <i class="ri-user-voice-line text-primary"></i>
-                  </div>
-                  <span>Emotional Intelligence</span>
-                </div>
-
-                <div class="flex items-center">
-                  <div class="w-8 h-8 flex items-center justify-center bg-blue-50 rounded-full mr-3">
-                    <i class="ri-focus-3-line text-primary"></i>
-                  </div>
-                  <span>Communication</span>
-                </div>
-                
-              </div>
-            </div>
+  <div class="circle-container">
+    <div class="circle" style="--percent: 75" data-label="75%"></div>
+    <div class="label">Problem problem-solving</div>
+  </div>
+  </div>
+</div>
           </div>
         </div>
     </div>
@@ -386,7 +401,7 @@
         </div>
             <div class="container-x">
   <div>
-    <div class="achievement-card bg-gradient-to-br from-blue-50 to-white p-6 rounded-lg border border-blue-100" onclick="openCert('file:///C:/Users/A1/Downloads/certificate.pdf')" >
+    <div class="achievement-card bg-gradient-to-br from-blue-50 to-white p-6 rounded-lg border border-blue-100" onclick="openCert('certificate.pdf')" >
             <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
               <span class="tag-cloud-s"><i class="fa-solid fa-star"></i></span>
             </div>
@@ -398,7 +413,7 @@
           </div>
   </div>
   <div>
-    <div class="achievement-card bg-gradient-to-br from-blue-50 to-white p-6 rounded-lg border border-blue-100" onclick="openCert('file:///D:/Document/typing.pdf')" >
+    <div class="achievement-card bg-gradient-to-br from-blue-50 to-white p-6 rounded-lg border border-blue-100" onclick="openCert('typing.pdf')" >
             <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
               <span class="tag-cloud-s"><i class="fa-solid fa-award"></i></span>
             </div>
@@ -655,5 +670,17 @@
           100% { opacity: 1; }
         }
       </style>
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed(".text", {
+    strings: ["Frontend Developer", "Web Developer"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+  });
+</script>
+
 </body>
 </html>
