@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agriculture Product Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #4CAF50;
+      color: white;
+    }
+    .navbar input, .navbar select {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 4px;
+    }
+    .cart {
+      font-weight: bold;
+    }
+    #product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+    }
+    .card button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>AgriStore</h1>
+      <input type="text" id="search" placeholder="Search products..." />
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="fragrances">Fragrances</option>
+        <option value="groceries">Groceries</option>
+        <option value="skincare">Skincare</option>
+      </select>
+      <div class="cart">Cart: <span id="cart-count">0</span> items - $<span id="total-price">0</span></div>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="product-container"></section>
+  </main>
+
+  <script>
+    let products = [];
+    let cart = [];
+
+    const productContainer = document.getElementById('product-container');
+    const searchInput = document.getElementById('search');
+    const categoryFilter = document.getElementById('category-filter');
+    const cartCount = document.getElementById('cart-count');
+    const totalPrice = document.getElementById('total-price');
+
+    fetch('https://dummyjson.com/products')
+      .then(res => res.json())
+      .then(data => {
+        products = data.products;
+        displayProducts(products);
+      });
+
+    function displayProducts(productsToDisplay) {
+      productContainer.innerHTML = '';
+      productsToDisplay.forEach(product => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <img src="${product.thumbnail}" alt="${product.title}" />
+          <h3>${product.title}</h3>
+          <p>$${product.price}</p>
+          <button onclick='addToCart(${JSON.stringify(product)});'>Add to Cart</button>
+        `;
+        productContainer.appendChild(card);
+      });
+    }
+
+    function addToCart(product) {
+      cart.push(product);
+      cartCount.textContent = cart.length;
+      const total = cart.reduce((sum, item) => sum + item.price, 0);
+      totalPrice.textContent = total.toFixed(2);
+    }
+
+    searchInput.addEventListener('input', () => {
+      const term = searchInput.value.toLowerCase();
+      const filtered = products.filter(product => product.title.toLowerCase().includes(term));
+      displayProducts(filtered);
+    });
+
+    categoryFilter.addEventListener('change', () => {
+      const category = categoryFilter.value;
+      const filtered = category === 'all' ? products : products.filter(product => product.category === category);
+      displayProducts(filtered);
+    });
+  </script>
+</body>
+</html>
